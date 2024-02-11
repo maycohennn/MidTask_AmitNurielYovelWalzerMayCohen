@@ -151,7 +151,7 @@ function searchConcepts() {
 // function for filtering concepts based on tags
 function filterConcepts(tag) {
     const searchInput = document.getElementById("searchInput");
-    searchInput.value = ""; // clear search input
+    searchInput.value = ""; // Clear the search input
     const concepts = document.querySelectorAll("#concepts li");
 
     concepts.forEach((concept) => {
@@ -169,9 +169,8 @@ function filterConcepts(tag) {
     setActiveButton(tag + "-btn");
 }
 
-// function for resetting button styles
 function resetButtonStyles() {
-    const buttons = document.querySelectorAll(".fillters button");
+    const buttons = document.querySelectorAll(".filters button");
     buttons.forEach((button) => {
         button.classList.remove("active");
     });
@@ -180,7 +179,7 @@ function resetButtonStyles() {
 function setActiveButton(buttonId) {
     console.log("Setting active button:", buttonId);
 
-    const buttons = document.querySelectorAll(".fillters button");
+    const buttons = document.querySelectorAll(".filters button");
     buttons.forEach((button) => {
         button.classList.remove("active");
     });
