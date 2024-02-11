@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <title>מושגי יסוד באזרחות</title>
+    <link rel="shortcut icon" href="images/favicon.png"> <!-- page favicon -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="styles/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/bootstrap.bundle.min.js"></script>
+    <script src="jScripts/javascript.js"></script>
+    
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- navigation bar -->
+        <nav>
+            <button id="nav-button" class="btn-mobile" onclick="toggleNav()"><img src="images/nav-icon.svg"
+                alt="ניווט" class="burger"></button>
+            <ul id="main-nav" class="flex-container-nav hide-mobile">
+                <li><a href="#">דף הבית</a></li>
+                <li class="selectedPage"><a href="#">מושגי יסוד באזרחות</a></li>
+                <li><a href="#">הכנה לבגרות</a></li>
+                <li><a href="#">אודות</a></li>
+            </ul>
+        </nav>
+        
+        <!-- page title with picture -->
+        <div class="my-heading">
+            <h1 class="my-title">מושגי יסוד באזרחות</h1>
+        </div>        
+        <!-- search and filter -->
+        <div class="myContainer">
+            <div class="search-container">
+                <p class="searchText">חיפוש מושג:</p>
+                <input type="text" placeholder="הקלד מושג כאן..." class="search-box" id="searchInput" oninput="searchConcepts()">
+            </div>
+            
+            <div class="filters">
+                <p class="filterText">סינון מושגים:</p>
+                <button id="NotI-btn" class="general-con" onclick="filterConcepts('NotI')">מושגים כלליים</button>
+                <button id="Israel-btn" class="israel-con" onclick="filterConcepts('Israel')">מדינת ישראל</button>
+                <button class="clear-con" onclick="filterConcepts('All')">נקה</button>
+            </div>
+        </div>
+        <!-- concepts container -->
+        <div id="concepts" class="flex-container-concepts">
+        </div>
+    </div>
+</body>
+</html>
