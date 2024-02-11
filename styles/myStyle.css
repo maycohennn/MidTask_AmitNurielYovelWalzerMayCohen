@@ -1,4 +1,4 @@
-﻿body {
+body {
   direction: rtl;
   font-family: 'Rubik', sans-serif;
   text-align: right;
@@ -18,6 +18,8 @@
   align-content: center;
   justify-content: center;
   gap: 2rem;
+  padding-left: 50%;
+  padding-right: 50%;
 }
 
 img {
@@ -343,5 +345,9 @@ p {
 
   #nav-button {
     display: none;
+  }
+
+  #concepts {
+    padding: 0;
   }
 }
