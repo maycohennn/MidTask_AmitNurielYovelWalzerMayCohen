@@ -98,18 +98,18 @@ a:hover {
 
 .myContainer {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 /* search bar */
 .search-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 0.5rem;
-  padding: 1.5rem;
+  padding: 1rem;
   padding-left: 0;
   width: 13rem;
 }
@@ -198,7 +198,7 @@ input[type=text]:focus {
   color: #00b3aa;
 }
 
-.fillters button.active {
+.filters button.active {
   background-color: #fafafa;
   color: black;
   border-color: black;
